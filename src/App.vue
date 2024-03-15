@@ -1,13 +1,14 @@
 <template>
-  <div>
-    Vue 3 + Vite News List Example
-  </div>
+  <tool-bar />
+  <router-view />
 </template>
 
-<script setup>
+<script>
+import ToolBar from './components/ToolBar.vue'
 
+export default {
+  components: {
+    ToolBar,
+  }
+}
 </script>
-
-<style lang="scss" scoped>
-
-</style>

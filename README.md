@@ -29,5 +29,8 @@ npm run dev or yarn dev
 
 ## Project Setup
 - router install
+```
+npm install vue-router --save
+```
 - vuex install
 - axios install
