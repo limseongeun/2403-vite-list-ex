@@ -2,9 +2,15 @@
 
 This repository is a mini project of a router list app practiced through the study of vite+vue.
 
+## Project Info
+- vue3 + vite
+- ES6
+- npm -v : 10.2.4
+- node -v : 20.11.1
+
 ## Create Project
 
-1. vite +  vue 프로젝트 생성
+1. vite +  vue 프로젝트 생성 ([vite 설명](./docs/vite.md))
 ```
 # npm 7+, '--'를 반드시 붙여주세요
 npm create vite@latest 2403-vite-list-ex -- --template vue
@@ -28,9 +34,15 @@ npm run dev or yarn dev
 ```
 
 ## Project Setup
-- router install
+- router install ([router 설명](./docs/router.md))
 ```
 npm install vue-router --save
 ```
 - vuex install
-- axios install
+```
+npm install vuex
+```
+- axios install ([axios 설명](./docs/axios.md))
+```
+npm install axios
+```

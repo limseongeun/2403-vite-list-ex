@@ -1,10 +1,26 @@
 <template>
-  <div>JobsView</div>
+  <div v-for="user in users" :key="user.id">
+    {{ user.title }}
+  </div>
 </template>
 
 <script>
-export default {
+import { fetchJobsList } from '../api/index.js';
 
+export default {
+  data() {
+    return {
+      users: []
+    }
+  },
+  created() {
+    fetchJobsList()
+      .then(response => {
+        console.log(response.data);
+        this.users = response.data;
+      })
+      .catch(error => console.log(error))
+  }
 }
 </script>
 
