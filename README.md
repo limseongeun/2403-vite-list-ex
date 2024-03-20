@@ -4,7 +4,7 @@ This repository is a mini project of a router list app practiced through the stu
 
 ## Project Info
 - vue3 + vite
-- ES6
+- ES6 [ES6 설명](./docs/es6.md)
 - npm -v : 10.2.4
 - node -v : 20.11.1
 
