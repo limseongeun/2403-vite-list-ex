@@ -1,25 +1,29 @@
 <template>
-  <div v-for="user in users" :key="user.id">
+  <div v-for="user in fetchedAsk" :key="user.id">
     {{ user.title }}
   </div>
 </template>
 
 <script>
-import { fetchAskList } from '../api/index.js';
+import { mapState, mapGetters } from 'vuex';
 
 export default {
-  data() {
-    return {
-      users: []
-    }
+  computed: {
+    ...mapGetters([
+      'fetchedAsk'
+    ]),
+    // #2
+    // ...mapState({
+    //   ask: state => state.ask
+    // })
+
+    // #1
+    // ask() {
+    //  return this.$store.state.ask;
+    // }
   },
   created() {
-    fetchAskList()
-      .then(response => {
-        console.log(response.data);
-        this.users = response.data;
-      })
-      .catch(error => console.log(error))
+    this.$store.dispatch('FETCH_ASK');
   }
 }
 </script>

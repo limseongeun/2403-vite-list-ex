@@ -38,7 +38,7 @@ npm run dev or yarn dev
 ```
 npm install vue-router --save
 ```
-- vuex install
+- vuex install ([vuex 설명](./docs/vuex.md))
 ```
 npm install vuex
 ```
