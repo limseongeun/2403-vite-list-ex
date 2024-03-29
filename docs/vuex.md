@@ -2,11 +2,11 @@
 
 ## 목차
 
-1. [Vuex란?](#Vuex란?)
-2. [Vuex의 주요 개념](#Vuex의-주요-개념)
-3. [Vuex의 장점](#Vuex의-장점)
-4. [Vuex의 사용 예시](#Vuex의-사용-예시)
-5. [Vuex 헬퍼 함수](#Vuex-헬퍼-함수)
+1. [Vuex란?](#vuex란?)
+2. [Vuex의 주요 개념](#vuex의-주요-개념)
+3. [Vuex의 장점](#vuex의-장점)
+4. [Vuex의 사용 예시](#vuex의-사용-예시-vue3-기준)
+5. [Vuex 헬퍼 함수](#vuex-헬퍼-함수)
 
 ## Vuex란?
 
