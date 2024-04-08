@@ -8,5 +8,9 @@ ul, ol, li {
   list-style: none;
 }
 a {
+  color: #43495e;
   text-decoration: none;
+}
+a:hover {
+  color: #42b883;
 }

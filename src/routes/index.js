@@ -12,23 +12,26 @@ const routes = [
   },
   {
     path: '/news',
+    name: 'news',
     component: NewsView,
   },
   {
-      path: '/ask',
-      component: AskView,
+    path: '/ask',
+    name: 'ask',
+    component: AskView,
   },
   {
-      path: '/jobs',
-      component: JobsView,
+    path: '/jobs',
+    name: 'jobs',
+    component: JobsView,
   },
   {
-      path: '/item/:id',
-      component: ItemView,
+    path: '/item/:id',
+    component: ItemView,
   },
   {
-      path: '/user/:id',
-      component: UserView,
+    path: '/user/:id',
+    component: UserView,
   },
 ];
 
