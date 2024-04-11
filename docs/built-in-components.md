@@ -1,7 +1,6 @@
 # Vue Built-in Components
 
 ## 목차
-
 1. [component](#component)
 2. [transition](#transition)
 3. [transition-group](#transition-group)
@@ -13,7 +12,7 @@ Vue는 개발자들이 쉽게 사용할 수 있는 여러 내장 컴포넌트를
 
 [Vue 공식 홈페이지 Built-in Components 링크](https://vuejs.org/api/built-in-components.html)
 
-## 1. component
+## component
 
 `component` 컴포넌트는 동적으로 컴포넌트를 렌더링하는 데 사용됩니다. 컴포넌트 이름이나 동적 컴포넌트 객체를 바인딩하여 사용할 수 있습니다.
 
@@ -21,7 +20,7 @@ Vue는 개발자들이 쉽게 사용할 수 있는 여러 내장 컴포넌트를
 <component :is="currentComponent"></component>
 ```
 
-## 2. transition
+## transition
 
 `transition` 컴포넌트는 요소가 추가되거나 제거될 때 CSS 트랜지션 효과를 추가하는 데 사용됩니다. 추가되거나 제거되는 요소를 감싸서 사용합니다.
 
@@ -31,7 +30,7 @@ Vue는 개발자들이 쉽게 사용할 수 있는 여러 내장 컴포넌트를
 </transition>
 ```
 
-## 3. transition-group
+## transition-group
 
 `transition-group` 컴포넌트는 리스트의 각 항목이 추가되거나 제거될 때 CSS 트랜지션 효과를 추가하는 데 사용됩니다. 주로 리스트를 렌더링할 때 사용됩니다.
 
@@ -41,7 +40,7 @@ Vue는 개발자들이 쉽게 사용할 수 있는 여러 내장 컴포넌트를
 </transition-group>
 ```
 
-## 4. keep-alive
+## keep-alive
 
 `keep-alive` 컴포넌트는 동적으로 생성된 컴포넌트의 상태를 유지하고, 컴포넌트를 캐시하여 다시 렌더링할 때 다시 생성하지 않습니다.
 

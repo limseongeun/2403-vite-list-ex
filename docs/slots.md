@@ -5,7 +5,7 @@
 1. [개요](#개요)
 2. [Slot 예제](#slot-예제)
 3. [Slot이란?](#slot이란)
-4. [Slot Content and Outlet](#단일-slot을-가진-컴포넌트)
+4. [Slot Content and Outlet](#Slot-Content-and-Outlet)
 5. [Slot의 기본값](#slot의-기본값)
 6. [Named Slot](#Named-slot)
 7. [Scoped Slot](#scoped-slot)
@@ -34,7 +34,7 @@ Vue.js에서 슬롯은 컴포넌트 간의 템플릿을 교환하기 위한 특�
 
 슬롯은 컴포넌트의 템플릿에 다른 컴포넌트나 요소의 콘텐츠를 삽입하는 데 사용됩니다.
 
-## 단일 Slot을 가진 컴포넌트
+## Slot Content and Outlet
 
 ```html
 <slot-example>
