@@ -51,3 +51,4 @@ npm install axios
 - Built-in Directives ([Built-in Directives 설명](./docs/built-in-directives.md))
 - Built-in Components ([Built-in Components 설명](./docs/built-in-components.md))
 - Slots ([Slots 설명](./docs/slots.md))
+- Mixins ([Mixins 설명](./docs/mixins.md))
