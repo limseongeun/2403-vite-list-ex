@@ -6,19 +6,17 @@ import actions from './actions.js'
 // Create a new store instance.
 export const store = createStore({
   state: {
-    news: [],
-    ask: [],
-    jobs: [],
     user: {},
     item: {},
+    list: [],
   },
   getters: {
-    fetchedAsk(state) {
-      return state.ask
-    }, 
+    fetchedList(state) {
+      return state.list
+    },
     fetchedItem(state) {
       return state.item
-    }
+    },
   },
   mutations,
   actions,
