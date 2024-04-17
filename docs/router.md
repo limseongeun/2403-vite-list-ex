@@ -1,13 +1,13 @@
 # Vue Router
 
 ## 목차
-1. [Vue Router란?](#Vue-Router란?)
+1. [Vue Router란?](#vue-Router란?)
 2. [설치 방법](#설치-방법)
 3. [기본 사용 방법](#기본-사용-방법)
-4. [Vue3에서의 사용 방법](#Vue3에서의-사용-방법)
+4. [Vue3에서의 사용 방법](#vue3에서의-사용-방법)
 5. [폴더별 구성](#폴더별-구성)
-6. [Vue Router 옵션 (Vue3 기준)](#Vue-Router-옵션-(Vue3-기준))
-7. [Vue Router Guard (Vue3 기준)](#Vue-Router-Guard-(Vue3-기준))
+6. [Vue Router 옵션 (Vue3 기준)](#vue-router-옵션-vue3-기준)
+7. [Vue Router Guard (Vue3 기준)](#vue-router-guard-vue3-기준)
 
 [Vue Router 사이트](https://v3.router.vuejs.org/)
 

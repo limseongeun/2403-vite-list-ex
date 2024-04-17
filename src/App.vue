@@ -43,10 +43,13 @@ export default {
 </script>
 
 <style>
-.page-enter-active, .page-leave-active {
+.page-leave-active, .page-leave-to {
+  display: none;
+}
+.page-enter-active {
   transition: opacity .5s;
 }
-.page-enter, .page-leave-to {
+.page-enter-from {
   opacity: 0;
 }
 </style>
