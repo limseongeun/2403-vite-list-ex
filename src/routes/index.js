@@ -4,6 +4,8 @@ import AskView from '../views/AskView.vue'
 import JobsView from '../views/JobsView.vue'
 import ItemView from '../views/ItemView.vue'
 import UserView from '../views/UserView.vue'
+import bus from '../utils/bus.js'
+import { store } from '../store/index.js'
 
 const routes = [
   {
@@ -38,4 +40,21 @@ const routes = [
 export const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+// router guard를 이용한 데이터 호출 시점 설정
+router.beforeEach((to, from, next) => {
+  if(to.name === 'news' || to.name === 'ask'|| to.name === 'jobs') {
+    bus.$emit('start:spinner');
+    store.dispatch('FETCH_LIST', to.name)
+      .then(() => {
+        console.log('fetched');
+        next();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  } else {
+    next();
+  } 
 });
