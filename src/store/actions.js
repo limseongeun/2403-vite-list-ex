@@ -2,7 +2,7 @@ import { fetchList, fetchUserInfo, fetchCommentItem } from '../api/index.js';
 
 export default {
   FETCH_USER({ commit }, name) {
-    fetchUserInfo(name)
+    return fetchUserInfo(name)
     .then(({ data }) => {
       commit('SET_USER', data);
     })
@@ -11,7 +11,7 @@ export default {
     })
   },
   FETCH_ITEM({ commit }, id) {
-    fetchCommentItem(id)
+    return fetchCommentItem(id)
     .then(({ data }) => {
       commit('SET_ITEM', data);
     })
@@ -20,7 +20,7 @@ export default {
     })
   },
   FETCH_LIST({ commit }, pageName) {
-    fetchList(pageName)
+    return fetchList(pageName)
       .then(({ data }) => {
         commit('SET_LIST', data);
       })
