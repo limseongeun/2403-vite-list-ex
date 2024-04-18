@@ -11,6 +11,7 @@
 7. [향상된 객체 리터럴 (Enhanced Object Literals)](#향상된-객체-리터럴-enhanced-object-literals)
 8. [모듈 (Modules)](#모듈-modules)
 9. [클래스 (Classes)](#클래스-classes)
+10. [Async와 Await](#async와-await)
 
 ## ES6(ECMAScript 2015)란?
 ES6는 ECMAScript 2015라고도 불리며, JavaScript의 표준버전 중 하나입니다. ES6는 JavaScript를 보다 강력하고 효율적으로 만들어주는 많은 기능을 포함하고 있습니다. 이를 간단한 예제와 함께 살펴보겠습니다.
@@ -188,3 +189,71 @@ class Person {
   }
 }
 ```
+
+## Async와 Await
+
+### Async와 Await란?
+
+ECMAScript 2017(ES8)부터 도입된 기능으로 Async와 Await는 JavaScript에서 비동기 프로그래밍을 더 쉽게 만드는데 사용되는 키워드입니다. Async 함수 내에서 비동기적 작업을 수행할 때 사용됩니다.
+
+### Async 함수 정의하기
+
+Async 함수는 함수 선언 앞에 `async` 키워드를 사용하여 정의됩니다. 이러한 함수는 항상 Promise를 반환합니다.
+
+```javascript
+async function fetchData() {
+    // 비동기 작업 수행
+    return await fetch('https://api.example.com/data');
+}
+```
+
+### Await 키워드
+
+Await 키워드는 Async 함수 내에서 비동기 작업이 완료될 때까지 기다립니다. Promise가 완료되면 그 값을 반환하고, 그렇지 않으면 계속 대기합니다.
+
+```javascript
+async function fetchData() {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    return data;
+}
+```
+
+### Async 함수의 에러 처리
+
+Async 함수 내에서 에러가 발생하면 일반적인 try-catch 블록을 사용하여 처리할 수 있습니다.
+
+```javascript
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('데이터를 불러오는 도중 오류 발생:', error);
+    }
+}
+```
+
+### 예시
+
+```javascript
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('데이터를 불러오는 도중 오류 발생:', error);
+    }
+}
+
+// fetchData 함수 호출
+fetchData().then(data => {
+    console.log('데이터:', data);
+}).catch(error => {
+    console.error('데이터를 불러오는 도중 오류 발생:', error);
+});
+```
+
+이렇게하면 비동기 작업을 수행하고 데이터를 처리할 수 있습니다. Async와 Await는 코드를 더 읽기 쉽고 유지 관리하기 쉽게 만들어주는 강력한 도구입니다.
