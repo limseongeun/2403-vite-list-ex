@@ -8,16 +8,31 @@ const config = {
 // 2. API 함수들을 정리
 // ES6 Template String `${string}string`
 
-function fetchList(pageName) {
-  return axios.get(`${config.baseUrl}${pageName}/1.json`);
+async function fetchList(pageName) {
+  try {
+    const response = await axios.get(`${config.baseUrl}${pageName}/1.json`);
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function fetchUserInfo(username) {
-  return axios.get(`${config.baseUrl}user/${username}.json`);
+async function fetchUserInfo(username) {
+  try {
+    const response = await axios.get(`${config.baseUrl}user/${username}.json`);
+    return response;
+  } catch (error) {
+    console.log(error);
+  } 
 }
 
-function fetchCommentItem(userid) {
-  return axios.get(`${config.baseUrl}item/${userid}.json`);
+async function fetchCommentItem(userid) {
+  try {
+    const response = await axios.get(`${config.baseUrl}item/${userid}.json`);
+    return response;
+  } catch (error) {
+    console.log(error);
+  } 
 }
 
 export {
