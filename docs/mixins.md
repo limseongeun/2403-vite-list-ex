@@ -14,6 +14,11 @@
 5. [주의사항과 팁](#5-주의사항과-팁)
 6. [결론](#6-결론)
 
+---
+
+[Vue 공식 홈페이지 mixins 링크](https://vuejs.org/api/options-composition.html#mixins)
+[Vue 공식 홈페이지 composables 링크](https://vuejs.org/guide/reusability/composables.html)
+
 ## 1. 믹스인이란 무엇인가?
 
 믹스인은 Vue 컴포넌트에 추가적인 옵션을 제공하여 코드를 재사용하는 기능입니다. 이는 여러 컴포넌트에서 동일한 기능을 공유하고 코드의 중복을 줄일 수 있도록 도와줍니다.
